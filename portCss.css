@@ -1,0 +1,212 @@
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+:root{
+    --bg-clr:#b64545;
+    --text-clr-1:#292c36;
+    --text-clr-2:#ffffff;
+    --snd-bg-clr:#F5E3DD;
+    --main-clr:#39241b;
+}
+
+span{
+    color: var(--bg-clr);
+}
+.services{
+    background-color: var(--snd-bg-clr);
+    min-height: 100vh;
+    padding: 10rem 7% 2rem 8%;
+}
+.services h2{
+     margin-bottom: 5rem;
+     font-size: 2.7rem;
+     text-align: center;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    box-sizing: border-box;
+    gap: 3rem;
+    flex-wrap: wrap; 
+}
+.services-container .services-box{
+    flex: 1 1 22rem;
+    padding: 2rem 1rem 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color:var(--bg-clr);
+    border: .1rem solid var(--snd-bg-clr);
+    /* margin: 2.5rem 1rem 2.5rem ; */
+    transition: .5 ease;
+
+}
+
+.services-box i {
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: .7rem;
+    
+}
+.services-box h3{
+    font-size: 2rem;
+    color: var(--text-clr);
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+.services-box p{
+    font-size: 1.5rem;
+    color: var(--text-clr);
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+.projects{
+    background-color: var(--snd-bg-clr);
+    min-height: 100vh;
+    padding: 10rem 7% 2rem 8%;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+.projects-container .projects-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--snd-bg-clr);
+    overflow: hidden;
+    display: flex;
+}
+.projects-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+.projects-box:hover img{
+    transform: scale(1.06);
+
+}
+
+.projects-box .project-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0 ,0 ,0.3), var(--bg-clr));
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.projects-box:hover .project-layer{
+    transform: translateY(0%);
+}
+.project-layer h4{
+    font-size: 2.6rem;
+    color: #0ef;
+}
+.project-layer p{
+     font-size: 1.6rem;
+     margin: .3rem 0 1rem;
+}
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--text-clr);
+    border-radius: 50%;
+
+}
+.project-layer a i{
+    font-size: 2rem;
+    color: var(--bg-clr);
+
+}
+
+/************************************* get location section *******************************/
+.icon {
+    margin-right: 0.5rem;
+    font-size: .5rem;
+}
+
+.inner .heading{
+    font-size: 2.5rem;
+}
+
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.restaurant-name, .restaurant-location, .restaurant-description {
+    line-height:1;
+}
+
+.inner .locate_discription{
+    font-size: 2.5rem;
+}
+#restaurantList {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .restaurant-list li {
+        margin: 5px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.restaurant-name {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 1.6rem;
+}
+
+.restaurant-location, .restaurant-description {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2px;
+    font-size: small;
+}
+.restaurant-logo {
+    margin-bottom: 2px;
+    margin:auto;
+}

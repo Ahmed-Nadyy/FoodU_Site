@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.@/css/font-awesome.min.css"
+    ret="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVtGOfQNHSoD2xbE+QkPxCAFtNEevoEH3StOsibVcOQVnN"
+    crossorigin="anonymous">
+
+    <script type="text/javascript"
+            src="https://www.bing.com/api/maps/mapcontrol?key=AukL8CrVu7aFufLLWi8M933nBD-zqGW01swPGtI_ypiwFmUbafxGIo_RIeH3FoN6&callback=initMap"
+            async defer></script>
+
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="portCss.css">
+    <title>Document</title>
+    <script src="new.js"></script>
+</head>
+        <body dir="rtl">
+            <section class="home" id="home" onmouseover="homy()">
+            <div class="container">
+            <div class="top">
+            <div class="overlay"></div>
+            <div class="header">
+                <div class="navbar">
+                    
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/ahmed-nady-742a18240/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram'target="_blank" ></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009827228094" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dark"></div>
+
+            <div class="menu">
+                <ul class="me">
+                    <li><a href="#home" class="active1" id="active1">الرئيسة</a></li>
+                    <li><a href="#services" class="active2" id="active2">إرشادات الاستخدام</a></li>
+                    <li><a href="#projects" class="active3" id="active3">أشهر المطاعم في منطقتك</a></li>
+                    <li><a href="#contact" class="active4"id="active4">تواصل معنا</a></li>
+                </ul>
+            
+                <a href="/new.html"><h2 class="Logo">FoodU</h2></a>
+                <div  class="Good_Health">
+                <a href="/main-page.html" target="_blank"><i class='bx bxs-leaf' ></i></a>
+                <div id="message"></div>
+            </div>
+            </div>
+            
+        </div>
+            <div class="home-content">
+                
+                <div class="left-three" id="left-three">
+                    <div class="Restbut">
+                        <h3>رجاءا إختر خدمتك</h3>
+                        
+                        
+                                    <a href="resturant/home.html" class="btnn" id="home-meal"  onclick="next_home_meal()" target="_blank" >أكلات منزلية</a>
+                                    <br><br>
+                                    <a href="resturant/resturant.html" class="btnn" id="rest-meal"  onclick="next_rest_meal()" target="_blank"  >مطاعم</a>
+                                    <br><br>
+                                    <a href="#" class="btnn" id="back"  onclick="Back_To_Select_Country()">رجوع</a></th>
+                                    <br><br>
+                    <!-- <a href="resturant/home.html" class="btn" id="home-meal"  onclick="next_home_meal()" target="_blank">أكلات منزلية</a>
+                        <a href="resturant/resturant.html" class="btn" id="rest-meal"  onclick="next_rest_meal()" target="_blank">مطاعم</a>
+                        <a href="#" class="btn" id="back"  onclick="Back_To_Select_Country()">رجوع</a> -->
+                        <p class="steps">مطعمك جاهز الان</p>
+                    </div>
+                </div>
+                <div class="left-tow" id="left-tow" >
+                    <h3>اختر مركزك</h3>
+                    <div style="display: grid; place-items: center;" >
+                        <table>
+                            <tr>
+                                <th>
+                                    <select id="place_cairo" class="markaz" name="place_cairo" onchange="JavaScript:changeDisplay()" >
+                        <option value="none" hidden selected>اختر مركزك </option>
+                        <option value="لسيدة زينب"  >السيدة زينب</option>
+                        <option value="الخليفة" >الخليفة</option>
+                        <option value="المقطم">المقطم</option>
+                        <option value="مصر القديمة">مصر القديمة</option>
+                        <option value="البساتين">البساتين</option>
+                        <option value="دار السلام">دار السلام</option>
+                        <option value="المعادي">المعادي</option>
+                        <option value="المعصرة">المعصرة</option>
+                        <option value="حلوان">حلوان</option>
+                        
+                    </select>
+                    
+                    <select id="place_qena"  class="markaz" name="place_qena"  onchange="JavaScript:changeDisplay()">
+                        <option value="none" hidden selected>اختر مركزك </option>
+                        <option value="نجع حمادي">نجع حمادى</option>
+                        <option value="دشنا">دشنا</option>
+                        <option value="ابو تشت">ابو تشت</option>
+                        <option value="الوقف">الوقف</option>
+                        <option value="قفط">قفط</option>
+                        <option value="قوص"> قوص</option>
+                        <option value="نقادة">نقادة</option>
+                        <option value="قنا">قنا</option>
+                        <option value="فرشوط">فرشوط</option>
+                        
+                    </select>
+                    <select id="place_alex" class="markaz" name="place_alex"   onchange="JavaScript:changeDisplay()">
+                        <option value="none" hidden selected>اختر مركزك </option>
+                        <option value="سيدي بشر">سيدي بشر </option>
+                        <option value="سيدي جابر">سيدي جابر</option>
+                        <option value="المكس">المكس</option>
+                        <option value="علي بن ابي طالب">علي بن ابي طالب</option>
+                        <option value="حوش عيسي">حوش عيسي</option>
+                        <option value="زاوية سيدي غازى">زاوية سيدي غازى</option>
+                        <option value="الرمل">الرمل</option>
+                        <option value="مينا البصل">مينا البصل</option>
+                        <option value="المتنزه">المتنزه</option>
+                        
+                    </select>
+                    <select id="place_assuit" class="markaz" name="place_assuit"  onchange="JavaScript:changeDisplay()">
+                        <option value="none" hidden selected>اختر مركزك</option>
+                        <option value="فيينا">فيينا</option>
+                        <option value="حديقة الفردوس">حديقة الفردوس</option>
+                        <option value="القيسارية">القيسارية</option>
+                        <option value="مسجد المجاهدين">مسجد المجاهدين</option>
+                        <option value="قنطرة المحجوب الاثرية">قنطرة المحجوب الاثرية</option>
+                    </th>
+                    </tr>
+                </select>
+            </table>
+        </div>
+        
+        <input type="button" id="the-last" value="التالي" class="btnn" style="width: fit-content;" onclick="Go2()"/>
+        <input type="button" class="btnn" id="rest-meal2" value="رجوع" style="width: fit-content;" onclick="back1()"/>
+        <p class="steps">مطعمك جاهز بعد خطوة واحدة </p>
+        
+    </div>
+    <div class="left-one" id="left-one" >
+        <h3>اختر المحافظة</h3>
+        
+        <select id="governate" name="governate"  style="width: 250px;"  onchange="JavaScript:changeDisplay()" required>
+            <option value="none" hidden  >اختر محافظتك</option>
+            <option value="القاهرة" >القاهرة</option>
+            <option value="الاسكندرية">الاسكندرية</option>
+            <option value="الإسماعيلية">الإسماعيلية</option>
+            <option value="بني سويف">بني سويف	</option>
+            <option value="البحر الأحمر">البحر الأحمر</option>
+            <option value="أسيوط">أسيوط</option>
+            <option value="أسوان">أسوان</option>
+            <option value="جنوب سيناء">جنوب سيناء</option>
+            <option value="الجيزة">الجيزة</option>
+            <option value="قنا">قنا</option>
+            <option value="كفر الشيخ">كفر الشيخ</option>
+            <option value="المنوفية">المنوفية</option>
+            
+        </select>
+        
+        <br>
+        <!-- <a href="#" class="btn" id="home-meal" style="width: fit-content;" onclick="back_to_select_service()">رجوع</a> -->
+        <a href="#" class="btn" id="rest-meal3" style="width: fit-content;" onclick="Go1()">التالي</a>
+        <p class="steps">مطعمك جاهز بعد خطوتين </p>
+        
+    </div>
+    
+    <div class="center" id="center"></div>
+    <div class="right" id="right">
+
+        <!-- ahmed mostafa map -->
+        <div id="container_map">
+            <div id="map"></div>
+
+        </div>
+
+    </div>
+    
+            </div>
+        </div>
+        </section>
+
+
+<!-- analyisis -->
+<div class="stats">
+    <div class="clients">
+        <span class="clientsnumspan">+</span><span id="count" class="clientsnumspan" data-goal="51">0</span>
+        <b><br/>عدد المطاعم المتاحة في الموقع</b>
+    </div>
+    <div class="noncommprojects">
+        <span class="noncommprojectsnumspan">+</span><span id="count" class="noncommprojectsnumspan" data-goal="22">0</span>
+        <b><br/>عدد منافذ بيع الوجبات المنزلية</b>
+    </div>
+    <div class="countries">
+        <span class="countrynumspan">+</span><span id="count" class="countrynumspan" data-goal="1">0</span>
+        <b><br/>عدد المحافظاة المغطاة</b>
+    </div>
+    <div class="commprojects">
+        <span class="commprojectsnumspan">+</span><span id="count" class="commprojectsnumspan" data-goal="9">0</span>
+        <b><br/>عدد المراكز المغطاة</b>
+    </div>
+</div>
+         
+    <!-- services section -->
+    <section class="services" id="services" onmouseover="services()">
+        <!-- <div style="height: 115px; width: 40px; background-color: #ff7b00;position: absolute; left: 0px; border-radius: 0 20% 20% 0;"></div> -->
+        <h2 class="heading"> إرشادات <span>الاستخدام</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-city' ></i>       
+                <h3>إختر محافظتك</h3>
+                <p>
+                    تختار المحافظة المتواجد بها حتي نقوم بتحديد المكان الخاص بك
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+            <div class="services-box" id="nur">
+                <i class='bx bxs-buildings' ></i>
+                <h3>إختر المركز التابع له</h3>
+                <p>تقوم باختيار المركز التابع له داخل محافظتك ومن ثم النقر علي التالي
+                </p>
+                <!-- <a href="#" class="btn" >Read More</a> -->
+            </div>
+            <div class="services-box">
+                <i class='bx bx-objects-horizontal-left' ></i>
+                <h3>حدد الخدمة</h3>
+                <p>
+                    تقوم بتحديد الخدمة المرادة ومن ثم نعرض لك قائمة بهذه الخدمة
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- most popular resturants section --> 
+    <section class="projects" id="projects" onmouseover="projects()">
+        <div class="inner">
+        <h2 class="heading">أشهر المطاعم <span style="color: #fff;">في منطقتك </span></h2>
+        <div class="containerr">
+            <button id="getLocationBtn" class="btn" onclick="getLoc()">
+                <img src="/imgs/location (1).png" alt="location icon" class="icon">
+                الحصول علي الموقع
+            </button>
+            <div id="restaurantList"></div>
+        </div>
+        <div class="locate_discription" id="LocDis"><p>بعد النقر فوق "<span style="color: #fff;">الحصول علي الموقع</span>" سيقوم النظام بتحديد أشهر 8 مطاعم في منطقتك</p>
+
+        </div>
+        <div class="locate_result"></div>
+    </div>
+    </section>
+
+
+<!-- contact-section -->
+<section class="contact" id="contact" onmouseover="contact()">
+    <h2 class="heading">تواصل <span style="color: #b64545;">معنا</span></h2>
+    <form action="#">
+        <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" ld="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="ارسال" class="btn">
+        </form>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- /******************************************/ -->
+
+            <script src="new.JS"></script>
+            
+            <script>
+                
+                
+                /*********************************/
+                
+                var home = document.getElementById("home");
+                window.addEventListener('load', function() {
+                    function showMessage(){
+                    var messageDiv = document.getElementById("message");
+                    messageDiv.style.position="relative";
+                    messageDiv.style.float="left";
+                    messageDiv.style.marginLeft="1%";
+                    messageDiv.style.display="inline-block";
+                    messageDiv.style.padding="10px";
+                    messageDiv.style.backgroundColor="#f2f2f2";
+                    messageDiv.style.borderRadius="10px";
+                    messageDiv.innerText = "أضغط هنا لحياة افضل >>";
+
+                    setTimeout(function() {
+                    
+                    messageDiv.style.backgroundColor="";
+                        messageDiv.innerText = "";
+                    }, 3500);
+                }
+                
+                    showMessage();
+                    setInterval(showMessage, 30000);
+                
+                    
+                    var images = [
+                        "imgs/2.jpg",
+                        "imgs/3.jpg",
+                        "imgs/4.jpg",
+                        "imgs/5.jpg",
+                        "imgs/6.jpg",
+                        "imgs/7.jpg",
+                    ];
+                    
+                    
+                    var index = 0;
+                    
+                    function changeBackground() {
+                        home.style.backgroundImage = 'url(' + images[index] + ')';
+                        index = (index + 1) % images.length;
+                        if(index==7)index=0;
+                    }
+                    
+                    
+        setInterval(changeBackground, 5000); 
+    });
+    
+    var LocDis = document.getElementById("LocDis");
+    /****************************************************/
+    
+    var FirstLift = document.getElementById("left-one");
+    var SecondLift = document.getElementById("left-tow");
+    var ThirdLift = document.getElementById("left-three");
+    var input;
+    var input2;
+    var validate1 = document.getElementById("governate");
+    var left_one = document.getElementById("left-one");
+    
+    
+    function Go1() {
+        if(validate1.value === "none"){
+            //    alert("Please, select your governate at first");
+            validate1.style.outlineWidth="3px";
+            validate1.style.outlineStyle="solid";
+            validate1.style.outlineColor="#ff4c4c";
+            
+        }
+        else {      
+            
+            FirstLift.style.display="none";
+            SecondLift.style.display="var(--bg-clr)";
+            validate1.style.outlineWidth="none";
+            validate1.style.outlineStyle="none";
+            validate1.style.outlineColor="none";
+        }
+        
+    }
+    function back1() {
+        SecondLift.style.display="none";
+        FirstLift.style.display="var(--bg-clr)";
+        left_one.style.animationDuration='0s';
+        
+        
+    }
+
+    function Go2() {
+        ThirdLift.style.display="var(--bg-clr)";
+        SecondLift.style.display="none";
+        
+    }
+    
+    function Back_To_Select_Country() {
+        ThirdLift.style.display="none";
+        SecondLift.style.display="var(--bg-clr)";
+        
+    }
+    function getLoc(){
+        
+    }
+    
+    function homy(){
+        document.getElementById("active1").style.color="#ff4c4c";
+        document.getElementById("active2").style.color="#fff";
+        document.getElementById("active3").style.color="#fff";
+        document.getElementById("active4").style.color="#fff";
+    }
+    
+    function services(){
+        document.getElementById("active1").style.color="#fff";
+        document.getElementById("active2").style.color="#ff4c4c";
+        document.getElementById("active3").style.color="#fff";
+        document.getElementById("active4").style.color="#fff";
+    }
+    
+    function projects(){
+        document.getElementById("active1").style.color="#fff";
+        document.getElementById("active2").style.color="#fff";
+        document.getElementById("active3").style.color="#ff4c4c";
+        document.getElementById("active4").style.color="#fff";
+    }
+    
+    function contact(){
+        document.getElementById("active1").style.color="#fff";
+        document.getElementById("active2").style.color="#fff";
+        document.getElementById("active3").style.color="#fff";
+        document.getElementById("active4").style.color="#ff4c4c";
+    }
+    
+    
+    /****************************************************/
+   
+function changeDisplay(){
+    var govern=document.getElementById("governate").value;
+    
+    if (govern == 'القاهرة') {
+        input = document.getElementById("governate");
+        input2 = document.getElementById("place_cairo");
+        document.getElementById("place_cairo").style.display="block";
+        document.getElementById("place_alex").style.display="none";
+        document.getElementById("place_qena").style.display="none";
+        document.getElementById("place_assuit").style.display="none";
+    }
+    
+      else if (govern == 'الاسكندرية') {
+          input = document.getElementById("governate");
+          input2 = document.getElementById("place_alex");
+      document.getElementById("place_alex").style.display="block";
+      document.getElementById("place_cairo").style.display="none";
+      document.getElementById("place_qena").style.display="none";
+      document.getElementById("place_assuit").style.display="none";
+      
+    }
+      else if (govern == 'قنا') {
+          input = document.getElementById("governate");
+          input2 = document.getElementById("place_qena");
+      document.getElementById("place_qena").style.display="block";
+      document.getElementById("place_alex").style.display="none";
+      document.getElementById("place_cairo").style.display="none";
+      document.getElementById("place_assuit").style.display="none";
+      
+    }
+
+      else if (govern == 'أسيوط') {
+          input = document.getElementById("governate");
+          input2 = document.getElementById("place_assuit");
+      document.getElementById("place_assuit").style.display="block";
+      document.getElementById("place_alex").style.display="none";
+      document.getElementById("place_qena").style.display="none";
+      document.getElementById("place_cairo").style.display="none";
+    }
+      else {
+          input = document.getElementById("governate");
+          input2 = document.getElementById("place_qena");
+      document.getElementById("place_qena").style.display="block";
+      document.getElementById("place_cairo").style.display="none";
+      document.getElementById("place_alex").style.display="none";
+      document.getElementById("place_assuit").style.display="none";
+    }
+    
+}
+
+/*************************************** map ******************************/
+
+function initMap() {
+
+    var map = new Microsoft.Maps.Map(document.getElementById('map'), {
+     center: new Microsoft.Maps.Location(26.8206, 30.8025),
+     customMapStyle: {
+         elements: {
+             area: { fillColor: '#b6e591' },
+             water: { fillColor: '#75cff0' },
+            //  tollRoad: { fillColor: '#a964f4', strokeColor: '#a964f4' },
+            //  arterialRoad: { fillColor: '#ffffff', strokeColor: '#d7dae7' },
+             road: {  strokeColor: '#ff9c4f' },
+            //  street: { fillColor: '#b64545', strokeColor: '#b64545' },
+             transit: { fillColor: '#000000' }
+         },
+         settings: {
+             landColor: '#efe9e1'
+         }
+     },
+     zoom: 5,
+                dir: 'rtl',
+                
+            });
+    map.setView({
+        mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+        labelOverlay: Microsoft.Maps.LabelOverlay.hidden
+    });
+
+
+function zoomIn(map, level) {
+    var currentLevel = map.getZoom();
+    if (level > currentLevel) {
+        var interval = setInterval(function () {
+            currentLevel = map.getZoom();
+            if (currentLevel >= level) {
+                clearInterval(interval);
+            } else {
+                map.setView({ zoom: currentLevel + 1, animate: true });
+            }
+        }, 100);
+    }
+}
+
+input = document.getElementById("governate");
+input2 = document.getElementById("place_alex");
+input3 = document.getElementById("place_assuit");
+input4 = document.getElementById("place_qena");
+input5 = document.getElementById("place_cairo");
+var combined = input.value + " " + input2.value;
+
+input.addEventListener("change", function () {
+    combined = input.value + " " + input2.value;
+    console.log(combined);
+});
+
+input2.addEventListener("change", function () {
+    combined = input.value + " " + input2.value;
+    console.log(combined);
+});
+
+input3.addEventListener("change", function () {
+    combined = input.value + " " + input3.value;
+    console.log(combined);
+});
+
+input4.addEventListener("change", function () {
+    combined = input.value + " " + input4.value;
+    console.log(combined);
+});
+
+input5.addEventListener("change", function () {
+    combined = input.value + " " + input5.value;
+    console.log(combined);
+});
+
+
+console.log(input,input2)
+console.log(combined);
+
+var searchBtn = document.getElementById("the-last");
+
+searchBtn.addEventListener("click", function () {
+    var url = "https://dev.virtualearth.net/REST/v1/Locations?q=" + combined + "&key=AukL8CrVu7aFufLLWi8M933nBD-zqGW01swPGtI_ypiwFmUbafxGIo_RIeH3FoN6";
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.resourceSets.length > 0 && data.resourceSets[0].resources.length > 0) {
+                 var location = data.resourceSets[0].resources[0].point.coordinates;
+                map.setView({
+                    center: new Microsoft.Maps.Location(location[0], location[1]), zoom: 11, animate: true, duration: 2000
+                });
+                zoomIn(map, 13);
+            }
+        });
+});
+
+
+var pushpins = [
+    {
+        location: new Microsoft.Maps.Location(26.15838864682573, 32.712665972295326),
+        title: 'MOODS',
+        description: 'العنوان :- ش 23 يوليو , سور نادي الشرطة  <br> الهاتف :- 01050108006',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1799137, 32.7388477),
+        title: 'الدكة',
+        description: 'العنوان :- المساكن , دردشة<br> الهاتف :- 1093030401',
+        icon: 'location (1).png'
+    },
+
+    {
+        location: new Microsoft.Maps.Location(26.1536972, 32.704976),
+        title: 'كشري ريزو',
+        description: 'العنوان :- برج نقابة الصيادلة , مدخل كورنيش النيل  <br> الهاتف :- 01050653440',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1584329, 32.7181166),
+        title: 'كويك فوود',
+        description: 'العنوان :- ش 23 يوليو , سور نادي الشرطة  <br> الهاتف :- 01010359214',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1622211, 32.7073505),
+        title: 'بابا برجر',
+        description: 'العنوان :- أمام النساجون الشرقيون ,شارع كوبري دندرة <br> الهاتف :- 1050625035',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1585828, 32.7149933),
+        title: 'بيتزا هوم',
+        description: 'العنوان :- ش 23 يوليو , سور نادي الشرطة <br> الهاتف :- 01050108006',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1517386, 32.7392417),
+        title: 'Puccini',
+        description: 'العنوان :- مدينة العمال , الرياح <br> الهاتف :- 1033111391',
+        icon: 'location (1).png'
+    },
+    {
+        location: new Microsoft.Maps.Location(26.1841649, 32.7275245),
+        title: 'كاستيلو',
+        description: 'العنوان :- الشؤون , شارع المعتقل <br> الهاتف :- 1060016780',
+        icon: 'location (1).png'
+    },
+
+];
+
+
+
+for (var i = 0; i < pushpins.length; i++) {
+    var pushpin = new Microsoft.Maps.Pushpin(pushpins[i].location, {
+        title: pushpins[i].title,
+        icon: pushpins[i].icon
+    });
+    var infobox = new Microsoft.Maps.Infobox(pushpins[i].location, {
+        title: pushpins[i].title,
+        description: pushpins[i].description,
+        visible: false
+    });
+    infobox.setMap(map);
+
+
+
+    Microsoft.Maps.Events.addHandler(pushpin, 'click', (function (infobox) {
+        return function () {
+            infobox.setOptions({ visible: true });
+        };
+    })(infobox));
+
+    map.entities.push(pushpin);
+}
+
+
+
+
+
+}
+
+
+function home(){
+document.getElementById("active1").style.color="#ff7b00";
+document.getElementById("active2").style.color="#fff";
+document.getElementById("active3").style.color="#fff";
+document.getElementById("active4").style.color="#fff";
+}
+
+function services(){
+document.getElementById("active1").style.color="#fff";
+document.getElementById("active2").style.color="#ff7b00";
+document.getElementById("active3").style.color="#fff";
+document.getElementById("active4").style.color="#fff";
+}
+
+function projects(){
+document.getElementById("active1").style.color="#fff";
+document.getElementById("active2").style.color="#fff";
+document.getElementById("active3").style.color="#ff7b00";
+document.getElementById("active4").style.color="#fff";
+}
+
+function contact(){
+document.getElementById("active1").style.color="#fff";
+document.getElementById("active2").style.color="#fff";
+document.getElementById("active3").style.color="#fff";
+document.getElementById("active4").style.color="#ff7b00";
+}
+
+// -------------------//
+var restaurants = [{ name: "Quick Food", city: "Qesm Qena", location: "ش 23 يوليو , سور نادي الشرطة", description: "Serving delicious food since 1990", logo: "new_images/new-logo4.png", link: "#" },
+{ name: "REZO", city: "Qesm Qena", location: "برج نقابة الصيادلة , مدخل كورنيش النيل", description: "Specializing in seafood", logo: "new_images/new-logo2.png", link: "#" },
+{ name: "MOODS", city: "Qesm Qena", location: "ش 23 يوليو , سور نادي الشرطة", description: "Voted best pizza in town", logo: "new_images/new-logo3.png", link: "#" },
+{ name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" }];
+
+
+document.getElementById("getLocationBtn").addEventListener("click", function () {
+LocDis.style.display="none";
+this.classList.add("hidden");
+getLocation();
+});
+
+
+function getLocation() {
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+}
+
+function showPosition(position) {
+var latitude = position.coords.latitude;
+var longitude = position.coords.longitude;
+
+var url =
+  "https://dev.virtualearth.net/REST/v1/Locations/" +
+  latitude +
+  "," +
+  longitude +
+  "?o=json&key=AukL8CrVu7aFufLLWi8M933nBD-zqGW01swPGtI_ypiwFmUbafxGIo_RIeH3FoN6";
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+      var address = data.resourceSets[0].resources[0].address;
+      var city = address.locality;
+      console.log(city);
+
+      var filteredRestaurants = restaurants.filter(function (restaurant) {
+          return restaurant.city === city;
+      });
+
+      var restaurantList = document.getElementById("restaurantList");
+      restaurantList.innerHTML = "";
+
+      if (filteredRestaurants.length > 0) {
+          var ul = document.createElement("ul");
+          ul.classList.add("restaurant-list");
+
+          filteredRestaurants.forEach(function (restaurant) {
+              var li = document.createElement("li");
+              li.classList.add("restaurant-item");
+
+              var a = document.createElement("a");
+              a.setAttribute("href", restaurant.link);
+
+              var img = document.createElement("img");
+              img.setAttribute("src", restaurant.logo);
+              img.classList.add("restaurant-logo");
+
+              var h3 = document.createElement("p");
+              h3.textContent = restaurant.name;
+              h3.classList.add("restaurant-name");
+
+
+              var p1 = document.createElement("p");
+              p1.textContent = restaurant.location;
+              p1.classList.add("restaurant-location");
+
+
+              var p2 = document.createElement("p");
+              p2.textContent = restaurant.description;
+              p2.textContent = restaurant.description;
+              p2.classList.add("restaurant-description");
+
+              a.appendChild(img);
+              li.appendChild(a);
+              li.appendChild(h3);
+              li.appendChild(p1);
+              li.appendChild(p2);
+
+              ul.appendChild(li);
+          });
+
+          restaurantList.appendChild(ul);
+      } else {
+          restaurantList.innerHTML = "No restaurants found in your city.";
+      }
+  });
+}
+/***************************** get location ******************************************/
+
+
+var restaurants = [{ name: "Quick Food", city: "Qesm Qena", location: "ش 23 يوليو , سور نادي الشرطة", description: "Serving delicious food since 1990", logo: "new_images/new-logo4.png", link: "#" },
+  { name: "REZO", city: "Qesm Qena", location: "برج نقابة الصيادلة , مدخل كورنيش النيل", description: "Specializing in seafood", logo: "new_images/new-logo2.png", link: "#" },
+  { name: "MOODS", city: "Qesm Qena", location: "ش 23 يوليو , سور نادي الشرطة", description: "Voted best pizza in town", logo: "new_images/new-logo3.png", link: "#" },
+      { name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" },
+      { name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" },
+      { name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" },
+      { name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" },
+       { name: "Cook Door", city: "Qesm Qena", location: "ش 23 يوليو , بجوار نقابة المعلمين", description: "Authentic Egyptian cuisine", logo: "new_images/new-logo5.png", link: "#" }
+  ];
+
+
+document.getElementById("getLocationBtn").addEventListener("click", function () {
+  this.classList.add("hidden");
+  getLocation();
+});
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+  }
+}
+
+function showPosition(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+
+  var url =
+      "https://dev.virtualearth.net/REST/v1/Locations/" +
+      latitude +
+      "," +
+      longitude +
+      "?o=json&key=AukL8CrVu7aFufLLWi8M933nBD-zqGW01swPGtI_ypiwFmUbafxGIo_RIeH3FoN6";
+
+  fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+          var address = data.resourceSets[0].resources[0].address;
+          var city = address.locality;
+          console.log(city);
+
+          var filteredRestaurants = restaurants.filter(function (restaurant) {
+              return restaurant.city === city;
+          });
+
+          var restaurantList = document.getElementById("restaurantList");
+          restaurantList.innerHTML = "";
+
+          if (filteredRestaurants.length > 0) {
+              var ul = document.createElement("ul");
+              ul.classList.add("restaurant-list");
+
+              filteredRestaurants.forEach(function (restaurant) {
+                  var li = document.createElement("li");
+                  li.classList.add("restaurant-item");
+
+                  var a = document.createElement("a");
+                  a.setAttribute("href", restaurant.link);
+
+                  var img = document.createElement("img");
+                  img.setAttribute("src", restaurant.logo);
+                  img.classList.add("restaurant-logo");
+
+                  var h3 = document.createElement("p");
+                  h3.textContent = restaurant.name;
+                  h3.classList.add("restaurant-name");
+
+
+                  var p1 = document.createElement("p");
+                  p1.textContent = restaurant.location;
+                  p1.classList.add("restaurant-location");
+
+
+                  var p2 = document.createElement("p");
+                  p2.textContent = restaurant.description;
+                  p2.textContent = restaurant.description;
+                  p2.classList.add("restaurant-description");
+
+                  a.appendChild(img);
+                  li.appendChild(a);
+                  li.appendChild(h3);
+                  li.appendChild(p1);
+                  li.appendChild(p2);
+
+                  ul.appendChild(li);
+              });
+
+              restaurantList.appendChild(ul);
+          } else {
+              restaurantList.innerHTML = "No restaurants found in your city.";
+          }
+      });
+}
+ /*********************************************************************/
+ let numms=document.querySelectorAll(".stats #count");
+    let divv=document.querySelector(".stats");
+    let start=false;
+    window.onscroll = function(){
+        if(window.scrollY>=divv.scrollTop){
+            if(!start){
+                numms.forEach((num)=>counting(num)); 
+            } 
+            start=true;
+        }
+    }
+    function counting(el){
+     let goal=el.dataset.goal;
+     let counter=setInterval(()=>{
+        el.textContent++;
+        if(el.textContent == goal){
+            clearInterval(counter);
+        }
+     },1500 / goal);
+}
+counting(document.querySelectorAll(".stats #count"));
+
+/****************************************************/
+
+/****************************************************/
+            </script>
+           
+        </body>
+</html>

@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: black;
+background-color: white;
+}
+#our{
+  font-size: 50px;
+  text-align: center;
+}
+
+.center{
+
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-right: px;
+  width: 100px;
+  height: 75px;
+
+ 
+}
+.reslist{
+  margin: auto;
+  justify-content: center;
+  display: auto;
+}
+.imgg{
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.checked {
+  color: orange;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.right{
+ float: right;
+ height: 296vh;
+width: 250px;
+top: 0;
+background-color: #292c36;
+margin-right: 2px;
+
+}
+.Logo{
+  opacity: 1;
+  margin-left: 7%;
+  font-size: 2.1rem;
+  font-weight: 900;
+  float: left;
+  color: #b64545;
+  
+}
+
+
+
+        /* background-color: #0ef; */
+
+        :root{
+          box-sizing:content-box;
+          --bg-clr:#b64545;
+          --text-clr-1:#292c36;
+          --text-clr-2:#ffffff;
+          --snd-bg-clr:#dfcbcb;
+          --main-clr:#39241b;
+      }
+      .homee{
+        background-color:#b64545;
+        height: px;
+      }
+.resturantt{
+        margin-right: 400px;
+        border: 1px solid black;
+        text-align: center;
+        background: #292c36;
+        padding: 5px 10px 5px 20px;
+        opacity: 1;
+        border-radius: 30px;
+        width: 52rem;
+        height: 150px;
+        color: var(--snd-bg-clr);
+        font-size: 1.3rem;
+       
+}
+
+.resturantt:hover{
+  background-color:rgb(216, 203, 21);
+  
+}
+
+.left{
+  display: table-cell;
+vertical-align: right;
+  padding: 7px;
+}
+
+.location{
+  font-size: 15px;
+
+}

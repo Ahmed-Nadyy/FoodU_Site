@@ -1,0 +1,431 @@
+:root{
+    --yellow:#fba505;
+    --blue:#4285f4;
+    --red:#ff3333;
+    --green:#b64545;
+    --white:#181818;
+    --black:#f0e2de;
+}
+*{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--black);
+    
+
+}
+section{
+    height: 100vh;
+}
+div{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    background-color: var(--black);
+    justify-content: space-between;
+    margin: 0 150px 0px 150px;
+    border-bottom: var(--white) 1px solid;
+    font-weight: 900;
+}
+.navbar .logo{
+    position: relative;
+    top: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 900;
+}
+.navbar .logo a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+
+}
+.navbar .logo a:hover{
+    color: var(--green);
+    transition: 200ms;
+}
+.bar{
+    display: flex;
+    list-style-type: none;
+    gap: 24px;    
+}
+
+.bar a{
+    text-decoration: none;
+    color: var(--white);
+}
+.bar .hire{
+    color: var(--green);
+}
+.bar a:hover{
+    color: var(--green);
+    transition: 200ms;
+}
+.landing{
+    margin: 24px 150px -24px 150px;    
+    height: 78vh;
+    background-color: var(--black);
+    display: flex;
+    overflow: hidden;
+    transition: 500ms;
+}
+.text{
+    padding: 24px 24px 24px;
+    width: 35%;
+    height: 70vh;
+    background-color: var(--black);
+    color: var(--white);
+    
+}
+.text .abdullah{
+    font-size: 50px;
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    width: 100%;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.text p{
+    text-align: justify;
+    font-size: 19.5px;
+}
+.landing .landingimg{
+    width: 65%;
+    height: 70vh;
+    transition: 500ms;   
+}
+
+.landing:hover .text .abdullah{
+    color: var(--yellow);
+    transition: 300ms;
+}
+.landingimg{
+    background-repeat:no-repeat;
+    margin:20px 0 0 0;
+    background-size:contain;
+    align-items: center;
+    justify-content:center;
+    transition: 1.5s;   
+    filter: brightness(90%);
+    filter: contrast(100%);
+}
+.scrollingarrow{
+    height: 70px;
+    margin-bottom: 24px;
+}
+.arrowcontainer{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+.arrowcontainer .arrow{
+    color: var(--white);
+    position: relative;
+   animation: arrow 1200ms infinite linear;
+}
+@keyframes arrow{
+    0%{top: 0px; filter: opacity(0);}
+    50%{top: 15px; filter: opacity(100%);}
+    100%{top: 30px; filter: opacity(0);}
+}
+
+.goodContainer {
+    display: flex;
+}
+.goodContainer .center{
+    margin-top: 40px;
+    flex: .011;
+    text-align: center;
+    width: .7rem;
+    height: 30rem;
+    background-color:var(--green);
+    border-radius: 50%;
+    opacity: .78;
+    
+}
+.goodContainer .right {
+    flex: 1;
+    text-align: center;
+    color: var(--green);
+    overflow:auto;
+    margin: 0 40px 0 40px;
+}
+.goodContainer .right h1{
+
+    color: var(--green);
+    font-size: 1.65rem;
+}
+.goodContainer .right p{
+    text-align: justify;
+    color: #181818;
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color:#1818181f;
+    border-radius: 30px;
+    
+}
+
+.goodContainer .left{
+    margin: 0 40px 0 40px;
+    flex: 1;
+    text-align: center;
+    
+
+}
+
+.goodContainer .left ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+
+  .goodContainer .left li {
+      position: relative; 
+      font-size: 1.7;
+  } 
+
+  .goodContainer .left h1{
+
+    color: var(--green);
+    font-size: 1.65rem;
+}
+
+  .goodContainer .left li:before {
+    content: "";
+    position: absolute; 
+    left: 0; 
+  } 
+  .goodContainer .left img {
+    width: 350px;
+    height: 300px;
+  } 
+  .goodContainer .left a {
+    /* text-decoration: none; */
+    color: var(--green);
+  } 
+  .caring{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--green);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  } 
+ 
+ #equality h1{
+
+    color: var(--green);
+    font-size: 1.65rem;
+    text-align: center;
+    padding-top: 40px;
+} 
+#equality p{
+
+   
+    font-size: 1rem;
+    text-align: center;
+    font-size: 1.3rem ;
+    
+} 
+.equality_container{
+    display: flex;
+    padding-top: 30px;
+}
+
+.equality_left{
+    flex: 1;
+    text-align: center;
+}
+.equality_img{
+    flex: 1;
+    text-align: center;
+}
+.equality_right{
+    flex: 1;
+    text-align: center;
+}
+.equality_right h1{
+    color: var(--green);
+    font-size: 1.65rem;
+    text-align: center;
+    
+}
+.equality_img img{
+width: 200px;
+height: 380px;
+}
+
+/* Styling for the contributions section */
+.contributions-section {
+    margin: 0 70px 0 70px ;
+    
+    
+  }
+  
+  /* Styling for each contribution */
+  .contribution {
+    margin: 0 70px 0 70px ;
+  }
+  
+  /* Styling for contribution headings */
+  .contribution h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styling for contribution paragraphs */
+  .contribution p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+.servshdng{
+    margin:60px 0 0 0 ;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--green);
+}
+.servs{
+    padding: 24px 150px 24px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.servs a{
+    text-decoration: none;
+}
+.servs .card{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-top: 5px;
+    width: 200px;
+    height: 130px;
+    transition: 200ms;
+}
+.servs .card img{
+    filter: invert(100%) hue-rotate(225deg);
+    mix-blend-mode: screen;
+}
+.aboutme{
+    display: flex;
+    margin-bottom: -7px;
+    background-image: url("assets/main-page/bg.png");
+    background-attachment: fixed;
+    
+}
+.aboutme .infoaboutme{
+    width: 800px;
+    text-align: justify;
+    font-size: 15px;
+    margin-right: 30px;
+}
+.aboutme .infoaboutme h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 42px;
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+.services{
+    margin: 0 150px 60px 150px;
+    padding: 24px 150px 24px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.servcard{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    transition: 500ms;
+}
+.servcard:hover b{
+    transition: 500ms;
+}
+
+.servcard b{
+    position: absolute;
+    color: var(--white);
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 85px;
+}
+.footer{
+    background-color: var(--black);
+    padding: 60px 150px 24px 150px;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+.footer b{
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+.footer a{
+    text-decoration: none;
+    color: var(--green);
+    width: fit-content;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: var(--white);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 300ms;
+}
+.footer .socialicons{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.socialmedia a{
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+.socialicons .face{
+    color: var(--blue);
+}
+.socialicons .insta{
+    color: #e60060 ;
+}
+.socialicons .youtube{
+    color: var(--red);
+}
+.socialicons .pinterest{
+    color: var(--red);
+}
+.socialicons .in{
+    color: var(--white);
+}
+
+.copy{
+    text-align: center;
+    background-color: var(--black);
+    height: 10vh;
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: var(--white);
+}

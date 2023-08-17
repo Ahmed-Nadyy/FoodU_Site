@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="resturant.css">
+<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    
+      <div id="af" class="navbar"  style="margin: 5px;">
+
+        <ul class="navbar-nav" id="menu" >
+              <li class="nav-item"><a href="resturant.html" class="nav-link" style="color: rgb(250, 49, 49);">الرئيسة</a></li>
+              <li class="nav-item"><a href="/new.html" class="nav-link">إرشادات الاستخدام</a></li>
+              <li class="nav-item"><a href="/new.html"  class="nav-link">أشهر المطاعم في منطقتك</a></li>
+              <li class="nav-item"><a href="/new.html"  class="nav-link">تواصل معنا</a></li>
+          </ul>
+          <a href="/new.html" class="nav-item" style="margin-right: 550px; color: brown;"><h2 class="Logo">FoodU</h2></a>
+        </div>
+      </nav>
+      </div>
+  <br><br>
+       <div class="right">
+        
+          <div  style="width: 220px; margin-right: 10px; height: 80px;">
+            <div class="input-group" > 
+              <input type="text" style=" margin-left: -4px; margin-top: 5px;  height: 40px;" class="form-control" id="autoSizingInputGroup" placeholder="بحث باسم المطعم">
+              <div class="input-group-text"  style="z-index: 100; margin-left: -6px; margin-top: 5px; height: 40px;" ><img style="width: 25px;" src="images/search.png" alt="">
+          </div>
+          </div>
+          </div>
+
+          <h4 style="color: #fff; float: right;">تصفية البحث</h4><br>
+
+            <ul style="direction: ltr; list-style: none;" id="mylist">
+              <li>
+                
+                <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 132px;">(11)</span> الكل</label>
+                <input type="radio" name="option" onchange="getSelectedOption()" onclick="changedisplay()" value="الكل">
+              </li>
+              <li>
+                <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 67px;">(5)</span> التوصيل للمنزل</label>
+                <input type="radio" name="option"  onchange="getSelectedOption()" onclick="changedisplay()" value="التوصيل للمنزل">
+              </li>
+              <li>
+                <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 87px;">(7)</span> الدفع اونلاين</label>
+                <input type="radio" name="option"  onchange="getSelectedOption()" onclick="changedisplay()" value="الدفع اونلاين">
+              </li>
+
+              <li>
+                <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 85px;">(8)</span> المفتوح حاليا</label>
+                <input type="radio" name="option"  onchange="getSelectedOption()" onclick="changedisplay()" value="المفتوح حاليا">
+              </li>
+            
+            </ul>
+          
+<br>
+
+            <h4 style="color: #fff; float: right;">نوع الاكل</h4><br><br>
+<ul style="direction: ltr; list-style: none;" id="mylist">
+  <li>
+    
+    <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 129px;">(5)</span> بيتزات</label>
+    <input type="radio" name="option" onchange="getSelectedOption()" onclick="changedisplay()" value="بيتزات">
+  </li>
+  <li>
+    <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 101px;">(6)</span> Fast Food</label>
+    <input type="radio" name="option"  onchange="getSelectedOption()" onclick="changedisplay()" value="Fast Food">
+  </li>
+  <li>
+    <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 82px;">(4)</span> شاورما سورى</label>
+    <input type="radio" name="option"  onchange="getSelectedOption()" onclick="changedisplay()" value="شاورما سورى">
+  </li>
+  <li>
+    <label style="color: #fff; margin-right: 5px;" class><span style="color: #ffffff88; float: left; padding-right: 88px;">(7)</span>وجبات كاملة</label>
+    <input type="radio"  name="option" onchange="getSelectedOption()" onclick="changedisplay()" value="وجبات كاملة">
+  </li>
+</ul>
+
+       </div>
+       
+      
+       <section>
+        <h2 style=" text-align: center; font-size: 200;">المحافظة:     <u style="margin-left: 20px; color: rgb(30, 153, 210);">قنا</u> مركز:    <u style="color: rgb(30, 153, 210);">قنا</u>     </h2>
+        <h1 id="our">(مط<span style="color: #eb3636;">اعم)</span> </h1>
+        
+        <div class="center">
+    
+          <div class="reslist">
+           
+            <div id="moods" class="resturantt" style="margin-bottom: 24px;" onclick="window.location='/Moods/mayada.html'" onchange="changedisplay()">
+              <div class="left">
+                <a href="/Moods/mayada.html"><img  class="imgg" src="images/moods.jpg" alt="" width="90px" height="80px"></a>
+              </div>
+              <div class="rightt">
+                <div style=" justify-content: space-between;">
+              <h4 style="padding-left: 684px;">موودز</h4>
+              <div style="text-align: left; margin-top: -130px;">
+              <span class="fa fa-star " style="font-size:20px;"></span>
+              <span class="fa fa-star checked" style="font-size:20px;"></span>
+              <span class="fa fa-star checked" style="font-size:20px;"></span>
+              <span class="fa fa-star checked" style="font-size:20px;"></span>
+              <span class="fa fa-star checked" style="font-size:20px;"></span>
+            </div>
+            </div>
+            <div  style=" margin-top: -40px; margin-right: 70px;">
+                <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>ش 23 يوليو , سور نادي الشرطة ,قنا</span> </a>
+                   <p>
+                <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006 </span> </a>&nbsp;
+                <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> moods.restaurant@gmail.com </span> </a>
+
+                   </p>
+                  </div>
+                  </div>
+                </div>
+              </a>
+      
+      
+          
+          <div id="rezo" class="resturantt" style="margin-bottom: 24px;" onclick="window.location='/Rezo/mayada.html'" onchange="changedisplay()">
+            <div class="left">
+              <a href="/Rezo/mayada.html"><img  class="imgg" src="images/rezo.jpg" alt="" width="90px" height="80px"></a>
+            </div>
+            <div class="rightt">
+              <div style=" justify-content: space-between;">
+            <h4 style="padding-left: 684px;">ريزو</h4>
+            <div style="text-align: left; margin-top: -130px;">
+            <span class="fa fa-star " style="font-size:20px;"></span>
+            <span class="fa fa-star checked" style="font-size:20px;"></span>
+            <span class="fa fa-star checked" style="font-size:20px;"></span>
+            <span class="fa fa-star checked" style="font-size:20px;"></span>
+            <span class="fa fa-star checked" style="font-size:20px;"></span>
+          </div>
+          </div>
+          <div  style=" margin-top: -40px; margin-right: 70px;">
+              <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>برج نقابة الصيادلة , مدخل كورنيش النيل , قنا</span> </a>
+                 <p>
+              <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050653440  </span> </a>&nbsp;
+              <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> rezo.restaurant.cafe@gmail.com </span> </a>
+
+                 </p>
+                </div>
+                </div>
+              </div>
+            </a>
+      
+       
+       <div class="resturantt" style="margin-bottom: 24px;" id="cook" onclick="window.location='/cook food/mayada.html'" onchange="changedisplay()">
+        <div class="left">
+          <a href="/cook food/mayada.html"><img  class="imgg" src="images/quick food.jpg" alt="" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">كويك فود</h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>ش 23 يوليو , سور نادي الشرطة ,قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01010359214   </span> </a>&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> quick.restaurant.cafe@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+     
+      <div class="resturantt" style="margin-bottom: 24px;" id="dekka" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/dekka.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">الدكة </h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>المساكن , دردشه , قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> dekka.restaurant.cafe@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+     
+      <div class="resturantt" style="margin-bottom: 24px;" id="baba" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/papa burger.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">بابا برجر </h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>أمام النساجون الشرقيون ,ش كوبري دندرة ,قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> baba.restaurant.@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+     
+      <div class="resturantt" style="margin-bottom: 24px;" id="betzza" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/pizza home.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">بيتزا هوم</h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>ش 23 يوليو , سور نادي الشرطة ,قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+     
+      <div class="resturantt" style="margin-bottom: 24px;" id="door" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/door.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">كويك دوور</h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>ش 23 يوليو , سور نادي الشرطة ,قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+    
+      <div class="resturantt" style="margin-bottom: 24px;" id="botch" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/puccini.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">بوتشيني</h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>مدينة العمال , الرياح , قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      
+      
+      <div class="resturantt" style="margin-bottom: 24px;" id="banfeno" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/panevino.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">بانفينو </h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>السور الخلفي لنادي الشرطة , شارع المعبر ,قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+    
+    
+     <div class="resturantt" style="margin-bottom: 24px;" id="caste" onclick="window.location='#'" onchange="changedisplay()">
+      <div class="left">
+        <a href="#"><img  class="imgg" src="images/castello.jpg" width="90px" height="80px"></a>
+      </div>
+      <div class="rightt">
+        <div style=" justify-content: space-between;">
+      <h4 style="padding-left: 684px;">كاستيلو </h4>
+      <div style="text-align: left; margin-top: -130px;">
+      <span class="fa fa-star " style="font-size:20px;"></span>
+      <span class="fa fa-star checked" style="font-size:20px;"></span>
+      <span class="fa fa-star checked" style="font-size:20px;"></span>
+      <span class="fa fa-star checked" style="font-size:20px;"></span>
+      <span class="fa fa-star checked" style="font-size:20px;"></span>
+    </div>
+    </div>
+    <div  style=" margin-top: -40px; margin-right: 70px;">
+        <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>الشؤون , شارع المعتقل , قنا</span> </a>
+           <p>
+        <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+        <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+
+           </p>
+          </div>
+          </div>
+        </div>
+      </a>
+    
+      
+      
+     
+      <div class="resturantt" style="margin-bottom: 24px;" id="markato" onclick="window.location='#'" onchange="changedisplay()">
+        <div class="left">
+          <a href="#"><img  class="imgg" src="images/mercato.jpg" width="90px" height="80px"></a>
+        </div>
+        <div class="rightt">
+          <div style=" justify-content: space-between;">
+        <h4 style="padding-left: 684px;">ماركاتو </h4>
+        <div style="text-align: left; margin-top: -130px;">
+        <span class="fa fa-star " style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+        <span class="fa fa-star checked" style="font-size:20px;"></span>
+      </div>
+      </div>
+      <div  style=" margin-top: -40px; margin-right: 70px;">
+          <a id="a" style="color: whitesmoke; text-decoration: none;" href="#">   <span class="location"> <i class="material-icons" style=" color:orange;font-size:20px;">place</i>الشؤون , شارع المعتقل , قنا</span> </a>
+             <p>
+          <a style="color: whitesmoke; text-decoration: none;" href="#"> <span style="margin-top: -10px;" >  <i class="material-icons" style="font-size:20px;color:orange">local_phone</i> 01050108006   </span> </a>&nbsp;&nbsp;
+          <a style="color: whitesmoke; text-decoration: none;" href="#">  <span > <i class="material-icons" style="font-size:20px;color:orange">mail</i> pizzahome.restaurant.@gmail.com </span> </a>
+  
+             </p>
+            </div>
+            </div>
+          </div>
+        </a>
+      
+      <br> <br>
+      
+      </div>
+      </div>
+      
+      </div>
+
+
+      </div> 
+
+    </section>
+    <script src="an.js"></script>
+  </body>
+</html>
