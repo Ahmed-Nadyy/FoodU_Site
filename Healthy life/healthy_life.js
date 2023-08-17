@@ -2,23 +2,23 @@ var home = document.getElementById("landingimg");
 window.addEventListener('load', function() {
     
     var images = [
-        "imgs/A-WEB-Goal-01.png",
-        "imgs/A-WEB-Goal-02.png",
-        "imgs/A-WEB-Goal-03.png",
-        "imgs/A-WEB-Goal-04.png",
-        "imgs/A-WEB-Goal-05.png",
-        "imgs/A-WEB-Goal-06.png",
-        "imgs/A-WEB-Goal-07.png",
-        "imgs/A-WEB-Goal-08.png",
-        "imgs/A-WEB-Goal-09.png",
-        "imgs/A-WEB-Goal-10.png",
-        "imgs/A-WEB-Goal-11.png",
-        "imgs/A-WEB-Goal-12.png",
-        "imgs/A-WEB-Goal-13.png",
-        "imgs/A-WEB-Goal-14.png",
-        "imgs/A-WEB-Goal-15.png",
-        "imgs/A-WEB-Goal-16.png",
-        "imgs/A-WEB-Goal-17.png"
+        "/imgs/A-WEB-Goal-01.png",
+        "/imgs/A-WEB-Goal-02.png",
+        "/imgs/A-WEB-Goal-03.png",
+        "/imgs/A-WEB-Goal-04.png",
+        "/imgs/A-WEB-Goal-05.png",
+        "/imgs/A-WEB-Goal-06.png",
+        "/imgs/A-WEB-Goal-07.png",
+        "/imgs/A-WEB-Goal-08.png",
+        "/imgs/A-WEB-Goal-09.png",
+        "/imgs/A-WEB-Goal-10.png",
+        "/imgs/A-WEB-Goal-11.png",
+        "/imgs/A-WEB-Goal-12.png",
+        "/imgs/A-WEB-Goal-13.png",
+        "/imgs/A-WEB-Goal-14.png",
+        "/imgs/A-WEB-Goal-15.png",
+        "/imgs/A-WEB-Goal-16.png",
+        "/imgs/A-WEB-Goal-17.png"
       ];
       
 
